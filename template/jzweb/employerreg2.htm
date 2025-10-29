@@ -1,0 +1,210 @@
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script language="Javascript" src="js/check.js"/></script>
+<div align="center">
+  <table border="1" width="760" cellspacing="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#E4E4E4">
+    <tr>
+      <td width="200" bgcolor="#FFCCCC">　</td>
+      <td><table cellspacing="0" cellpadding="0" width="550" border="0">
+        <tr>
+          <td  height="33"><table cellspacing="0" cellpadding="0" width="550" border="0">
+            <tr>
+              <td width="566"><table cellspacing="0" cellpadding="0" width="397" border="0">
+                <tr>
+                  <td width="15">　</td>
+                  <td width="382"><table cellspacing="0" cellpadding="0" width="504" border="0">
+                    <tr>
+                      <td width="116" style="font-size: 9pt"><img src="template/jzweb/images/8.gif" width="116" height="41" /></td>
+                      <td width="12" background="template/jzweb/images/zhuce-0005.gif" style="font-size: 9pt">　</td>
+                      <td width="129" background="template/jzweb/images/zhuce-0005.gif" style="font-size: 9pt"><img src="template/jzweb/images/7.gif" width="116" height="41" /></td>
+                      <td width="129" background="template/jzweb/images/zhuce-0005.gif" style="font-size: 9pt"><img src="template/jzweb/images/6.gif" width="116" height="41" /> </td>
+                      <td width="118" align="right" background="template/jzweb/images/zhuce-0005.gif" style="font-size: 9pt"><img src="template/jzweb/images/5.gif" width="116" height="41" /></td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" style="font-size: 9pt">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td align="middle"><div id="pnlFirst">
+            <table cellspacing="0" width="100%" border="1" bordercolor="#FFFFFF">
+              <form action="register.php"  method="post"  name="form" id="form">
+                <tr>
+                  <td height="30" colspan="2" align="middle" bgcolor="#FFCCCC"><p> <span>注册第二步：填写用户信息</span>&nbsp; </p></td>
+                </tr>
+                <tr align="left" bgcolor="#fffae8">
+                  <td height="25" colspan="2">【基本信息】
+                    <input type="hidden" name="type" value="employer" />
+                    <input type="hidden" name="step" value="3" /></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" width="120" height="25"><font face="宋体">用 户 名：</font> </td>
+                  <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="19">
+                                <div align="left">
+                                  <input type="text" name="username" maxlength="12"/> 
+                                  *
+                                  <input type="button" name="Submit" value="检查用户名是否存在" onclick="return checkusername()">
+                              </div>                              
+                                <div align="center"></div></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" width="120" height="25"><font face="宋体">密&nbsp;&nbsp;&nbsp; 码：</font> </td>
+                  <td><div align="left"><font face="宋体">
+                    <input id="txtPassword" type="password" name="password1" maxlength="16"/>
+                    * 限6-16个字符</font></div></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" width="120" height="25"><font face="宋体">密码确认：</font> </td>
+                  <td><div align="left"><font face="宋体">
+                    <input id="txtPassword1" type="password" name="password2" />
+*                  </font></div></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" width="120" height="25"><font face="宋体">提示问题：</font> </td>
+                  <td><div align="left"><font face="宋体">
+						<input type="text" name="question" /> 
+						* 可以通过回答问题可以寻回遗忘的密码</font></div></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" width="120" height="25"><font face="宋体">问题答案：</font> </td>
+                  <td><div align="left"><font face="宋体">
+                  <input id="answer" name="answer" />
+</font><font face="宋体">* 请牢记填写的答案</font></div></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25" colspan="2"><p align="left">【详细信息】</p></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" width="120" height="25"> 真实姓名<font face="宋体">：</font></td>
+                  <td><div align="left"><font face="宋体">
+                    <input id="name" name="name" />
+*                  </font></div></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25"> 固定电话：</td>
+                  <td><div align="left"><font face="宋体">
+                    <input id="telephone" name="telephone" />
+*                  </font></div></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">手机：</td>
+                  <td align="left"><input type="text" name="mobile" /> 
+                    * </td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">E-mail：</td>
+                  <td align="left"><input type="text" name="email" /></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">QQ/MSN：</td>
+                  <td align="left"><input type="text" name="qq" /></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">所在地区：</td>
+                  <td align="left">
+				  <select name="area">
+					  <!-- BEGIN AREA_LIST -->
+					  <option value="{area_id}">{area_name}</option>
+					  <!-- END AREA_LIST -->
+				  </select> 
+				  * 
+				  </td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">详细联系地址：</td>
+                  <td align="left"><input type="text" name="address" size="50"/> 
+                    * </td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td height="25" colspan="2" align="left">【雇员具体要求】</td>
+                  </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">服务类型：</td>
+                  <td align="left"><select name="service[]" size="8" multiple="multiple" id="service">
+					  <!-- BEGIN SERVICE_LIST -->
+					  <option value="{service_name}">{service_name}</option>
+					  <!-- END SERVICE_LIST -->
+                  </select> 
+                    * </td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">薪酬要求：</td>
+                  <td align="left"><input type="text" name="salary" />
+*（最好填面议）</td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">文凭要求：</td>
+                  <td align="left"><select name="ideal_degree">
+					  <!-- BEGIN DEGREE_LIST -->
+					  <option value="{degree_id}">{degree_name}</option>
+					  <!-- END DEGREE_LIST -->
+                  </select> 
+                    * </td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">性别要求：</td>
+                  <td align="left"><font face="宋体">
+                    <select  name="ideal_sex">
+                      <option value="不限" selected="selected">不限</option>
+                      <option value="男">男</option>
+                      <option value="女">女</option>
+                    </select>
+*                  </font></td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">年龄要求：</td>
+                  <td align="left"><select name="ideal_age" style="FONT-SIZE: 12px; BACKGROUND-COLOR: #ffffff" size="1">
+                    <option value="年龄不限" selected="selected">年龄不限</option>
+                    <option value="20岁以下">20岁以下</option>
+                    <option value="20-30岁">20-30岁</option>
+                    <option value="30-40岁">30-40岁</option>
+                    <option value="40-50岁">40-50岁</option>
+                    <option value="50-60岁">50-60岁</option>
+                    <option value="60岁以上">60岁以上</option>
+                  </select> 
+                    * </td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">是否住家：</td>
+                  <td align="left"><select name="home">
+                    <option value="0" selected="selected">否</option>
+                    <option value="1">是</option>
+                  </select> 
+                    * </td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="25">工作期限：</td>
+                  <td align="left"><input type="text" name="worktime" /> 
+                    * 如长期、短期等</td>
+                </tr>
+                <tr bgcolor="#fffae8">
+                  <td align="right" height="64">具体要求和说明：</td>
+                  <td align="left"><textarea name="requirement" cols="40" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                  <td align="middle" bgcolor="#fff2cd" colspan="2" height="30"><div align="center">
+                    <input id="submit"  type="submit" value=" 提交 " name="submit" onclick="return checkemployer();" />
+                    &nbsp;
+                    <input onclick="javascript:history.go(-1)" type="button" value="返回上一页" name="back" />
+                  </div></td>
+                </tr>
+              </form>
+            </table>
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <table height="6" cellspacing="0" cellpadding="0" width="760" align="center" border="0">
+    <tr>
+      <td align="middle" style="font-size: 12px">　</td>
+    </tr>
+  </table>
+</div>

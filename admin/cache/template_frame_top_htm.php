@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<title>TopMenu</title>
+<LINK href="styles/frame.css" type="text/css" rel="stylesheet">	
+<script type="text/javascript" src="js/clock.js"></script>
+</head>
+<body>
+<div id="top">
+<div id="topTitle">[红棉家政管理后台]</div>
+<div id="toplink">
+[<a href="../index.php" target="_blank">网站首页</a>]
+[<a href="index.php?a=main" target="mainFrame">显示桌面</a>]
+[<a href="index.php?a=logout" target="_top">退出登陆</a>]
+</div>
+<div id="bar">
+<div id="clock"></div>
+您好，<?php
+echo $_obj['username'];
+?>
+
+</div>
+<script>showtime();</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{ margin:0px; padding:0px;}
+body{
+	background-color: #CCC;
+	font-size:12px;
+}
+a:link,a:visited,a:active{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	color: #95B7DA;
+}
+#main{
+	position: absolute;
+	z-index: 1;
+	background:#E2ECE3;
+	width: 300px; height: 200px;
+	left: 50%; margin-left: -150px;
+	top: 50%; margin-top: -100px;
+}
+#passTable{
+	width: 300px; height: 80px;
+	margin-top: 30px;
+	margin-left: 0px;
+	clear:both;
+	text-align:center;
+}
+#passTable form{
+	padding:0px;
+}
+#passTable div{
+	list-style:none;
+	height:32px;
+}
+#footer{
+	width: 300px;
+	color:#000;
+	text-align:center;
+	margin-top:20px;
+	clear:both;
+}
+
+.login_input{
+	font-family: Verdana, PMingLiU;
+	color: #333;
+	font-size: 12px;
+	background-color:transparent;
+	padding-bottom:2px;
+	border: 0px;
+	border-bottom: 1px solid #14a346;
+}
+.buttomli{text-align:center; }
+.buttomli input{
+	width:96px; height:24px; padding-top:2px;
+	border: 1px solid #14a346;
+	background-color:#dbffe8;
+}

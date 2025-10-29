@@ -1,0 +1,50 @@
+* {
+	margin:0px auto;
+	padding:0px auto;
+}
+body {
+	background-color:#DEEBFF;
+	width:720px;
+	position:relative;
+	left:50%;
+	margin-left:-360px;
+	font-size:12px;
+}
+h4 {
+	text-align:center;
+	margin-top:20px;
+	font-size:16px;
+	font-weight:bold;
+}
+.info {
+	border:1px solid blue;
+	margin-top:20px;
+	height:auto;
+	width:720px;
+}
+.title {
+	background-color:blue;
+	color:white;
+	font-weight:bold;
+	padding-left:10px;
+	height:20px;
+	padding-top:5px;
+}
+li {
+	list-style-type:none;
+	margin-left:15px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#leftlist {
+	width:350px;
+	float:left;
+}
+#rightlist {
+	width:350px;
+	float:right;
+}
+#clear
+{
+	clear:both;
+}

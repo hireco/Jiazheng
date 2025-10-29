@@ -1,0 +1,119 @@
+<script language="Javascript" src="js/check.js"/></script>
+<table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="164" height="188" valign="top" bgcolor="#FFCCFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="27" bgcolor="#FFCCFF"><div align="center">【相关文章列表】</div></td>
+      </tr>
+    </table>
+        <table width="100%" height="161" border="0" cellpadding="0" cellspacing="1">
+          <tr>
+            <td valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<!-- BEGIN RELATIVE -->
+                <tr>
+                  <td width="100%" height="19"><a href="article.php?id={id}" title="{title}">{short}</a></td>
+                </tr>
+			<!-- END RELATIVE -->
+            </table></td>
+          </tr>
+      </table></td>
+    <td valign="top" bgcolor="#FFCCCC"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="27" bgcolor="#FFCCCC">&nbsp;&nbsp;&nbsp;你所在位置-<a href="article_center.php">新闻中心</a>-{title}</td>
+      </tr>
+      <tr>
+        <td height="595" valign="top"><table width="100%" height="595" border="0" align="center" cellpadding="0" cellspacing="1">
+            <tr>
+              <td height="17" valign="bottom" bgcolor="#FFFFFF"><div align="center" style="margin-top:10px;">{title}
+                <p>作者：{author}&nbsp;&nbsp;来源：{source}&nbsp;&nbsp;时间：{date}&nbsp;&nbsp;点击数：{click}</p>
+              </div></td>
+            </tr>
+            <tr>
+              <td height="575" valign="top" bgcolor="#FFFFFF"><table width="100%">
+                  <tr>
+                    <td width="2%"></td>
+                    <td width="0%" height="140"></td>
+                    <td width="86%" valign="top"><p>{content}</p>
+                      </td>
+                    <td width="12%"></td>
+                  </tr>
+                  <tr>
+				  <!-- IF COMMENT -->
+                    <td height="140" colspan="4" valign="top"><table width="100%" height="130" border="0" cellpadding="0" cellspacing="0">
+                        <tr bgcolor="#FFCCCC">
+                          <td align="center"><table width="99%" height="163"  
+        border="0" cellpadding="0" cellspacing="1">
+                              <tbody>
+                                <tr align="center" valign="middle">
+                                  <td height="161" bgcolor="#ffffff"><div align="center">
+                                      <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#FFCCCC" 
+            border="0">
+                                        <tbody>
+                                          <tr>
+                                            <td width="50%"><table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                <tbody>
+                                                  <tr>
+                                                    <td height="27"><div align="left">&nbsp;&nbsp;&nbsp;发表评论</div></td>
+                                                  </tr>
+                                                </tbody>
+                                            </table></td>
+                                            <td><table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                <tbody>
+                                                  <tr>
+                                                    <td><div align="left"><a href="comment.php?id={id}">更多评论({comment_num}条)</a></div></td>
+                                                  </tr>
+                                                </tbody>
+                                            </table></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                        <tbody>
+                                          <tr>
+                                            <td align="left" valign="top" bgcolor="#ffffff">
+											<form action="comment.php" method="post" name="form1" id="form1">
+                                                <table cellspacing="0" cellpadding="2" width="100%" 
+                  bgcolor="#ffffff" border="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="15%" valign="middle"><div align="right">
+                                                          <div align="center">留言内容</div>
+                                                      </div></td>
+                                                      <td colspan="2"><div align="left">
+                                                          <textarea id="content" name="content" rows="8" cols="45"></textarea>
+														  <input type="hidden" name="action" value="post" /><input type="hidden" name="aid" value="{id}" />
+                                                      </div></td>
+                                                    </tr>
+													<!-- IF VERIFY -->
+                                                    <tr>
+                                                      <td valign="top"><div align="right">输验证码</div></td>
+                                                      <td valign="bottom" align="left" colspan="2"><IFRAME frameBorder="0" id="code_check" scrolling="no" name="code_check" src='showpicture.php' style='HEIGHT: 25px; VISIBILITY: inherit; WIDTH: 135px; Z-INDEX: 1'></IFRAME></td>
+                                                    </tr>
+													<!-- ENDIF -->
+                                                    <tr>
+                                                      <td valign="top">&nbsp;</td>
+                                                      <td width="43%"><input id="com_sub" type="submit" value="提 交" name="submit" onclick="return {check}();" />
+                                                        <div align="left"></div></td>
+                                                      <td width="42%"><input type="reset" value="重 置" name="reset" /></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                            </form></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                  </div></td>
+                                </tr>
+                              </tbody>
+                          </table></td>
+<!-- ENDIF -->
+                        </tr>
+                    </table></td>
+                  </tr>
+              </table></td>
+            </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>

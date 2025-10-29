@@ -1,0 +1,241 @@
+<script language="Javascript" src="js/check.js"/></script>
+<div align="center">
+  <table style="BORDER-COLLAPSE: collapse" bordercolor="#e4e4e4" cellpadding="0" 
+width="760" border="1">
+    <tbody>
+      <tr valign="top">
+        <td width="200" height="359"><table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td colspan="2"><table cellspacing="0" cellpadding="0" width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td bgcolor="#FFCCFF" height="20"><div align="center">【{type}信息】　</div></td>
+                      <td width="2" bgcolor="#e9e9e9"></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#e9e9e9" height="2"></td>
+                      <td bgcolor="#e9e9e9" height="2"></td>
+                    </tr>
+                  </tbody>
+              </table></td>
+            </tr>
+            <tr>
+              <td width="44%" align="left">&nbsp;&nbsp;&nbsp;会员编号</td>
+              <td width="56%">{id}</td>
+            </tr>
+			<!-- IF EMPLOYEE -->
+            <tr>
+              <td align="left">&nbsp;&nbsp;&nbsp;认证状况</td>
+              <td>{qualified}</td>
+            </tr>
+			<!-- ENDIF -->
+            <tr>
+              <td align="left">&nbsp;&nbsp;&nbsp;审核状况</td>
+              <td>{checked}</td>
+            </tr>
+			<!-- IF EMPLOYER -->
+            <tr>
+              <td align="left">&nbsp;&nbsp;&nbsp;置顶状况</td>
+              <td>{top}</td>
+            </tr>
+			<!-- ENDIF -->
+			<!-- IF EMPLOYEE -->
+            <tr>
+              <td align="left">&nbsp;&nbsp;&nbsp;推荐状况</td>
+              <td>{recommended}</td>
+            </tr>
+            <tr>
+              <td align="left">&nbsp;&nbsp;&nbsp;聘请状况</td>
+              <td>{hired}</td>
+            </tr>
+			<!-- ENDIF -->
+            <tr>
+              <td align="left"><p align="left">&nbsp;&nbsp;&nbsp;登陆次数</p></td>
+              <td>{visit_times}</td>
+            </tr>
+            <tr>
+              <td><p align="left">&nbsp;&nbsp;&nbsp;被访问次数</p></td>
+              <td>{visited_times}</td>
+            </tr>
+            <tr>
+              <td align="left"><p align="left">&nbsp;&nbsp;&nbsp;注册日期</p></td>
+              <td>{reg_time}</td>
+            </tr>
+          </tbody>
+        </table>
+        <table width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td><table cellspacing="0" cellpadding="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#FFCCFF" height="20"><div align="center">【{type}资料】　</div></td>
+                          <td width="2" bgcolor="#e9e9e9"></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#e9e9e9" height="2"></td>
+                          <td bgcolor="#e9e9e9" height="2"></td>
+                        </tr>
+                      </tbody>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td><p align="left">&nbsp;&nbsp;&nbsp;<a href="membercenter.php?j=Info&a={edit}">资料修改</a></p></td>
+                </tr>
+				<!-- IF EMPLOYER -->
+                <tr>
+                  <td><p align="left">&nbsp;&nbsp;&nbsp;<a href="membercenter.php?j=Info&a=editrequirement">要求修改</a></p></td>
+                </tr>
+				<!-- ENDIF -->
+                <tr>
+                  <td><p align="left">&nbsp;&nbsp;&nbsp;<a href="membercenter.php?j=Info&a=editpass">密码修改</a></p></td>
+                </tr>
+              </tbody>
+          </table>
+          <table width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td><table cellspacing="0" cellpadding="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#FFCCFF" height="20"><div align="center">【预约信息】　</div></td>
+                          <td width="2" bgcolor="#e9e9e9"></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#e9e9e9" height="2"></td>
+                          <td bgcolor="#e9e9e9" height="2"></td>
+                        </tr>
+                      </tbody>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td><p align="left">&nbsp;&nbsp;&nbsp;{receive}</p></td>
+                </tr>
+                <tr>
+                  <td><p align="left">&nbsp;&nbsp;&nbsp;{send}</p></td>
+                </tr>
+              </tbody>
+          </table>
+          <table width="100%" border="0">
+            <tbody>
+              <tr>
+                <td><table cellspacing="0" cellpadding="0" width="100%" border="0">
+                    <tbody>
+                      <tr>
+                        <td bgcolor="#FFCCFF" height="20"><div align="center">【系统操作】　</div></td>
+                        <td width="2" bgcolor="#e9e9e9"></td>
+                      </tr>
+                      <tr>
+                        <td bgcolor="#e9e9e9" height="2"></td>
+                        <td bgcolor="#e9e9e9" height="2"></td>
+                      </tr>
+                    </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td><p align="left">&nbsp;&nbsp;&nbsp;<a href="membercenter.php?j=System&amp;a=logout">安全退出</a></p></td>
+              </tr>
+            </tbody>
+          </table></td>
+        <td><div align="center">
+          <table width="95%" border="0">
+            <tbody>
+              <tr>
+                <td height="353" valign="top" bgcolor="#FFCCCC"><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFCCFF">
+                  <tr>
+                    <td width="78%" height="34" bgcolor="#FFFFFF"><div align="left">你当前的位置-会员中心</div></td>
+                    <td width="22%" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                </table>
+                  <table width="100%" height="316">
+                    <tr valign="top">
+                      <td><form id="form" name="form" method="post" action="membercenter.php?j=Info&a=doeditrequirement">
+                        <table width="100%">
+                          <tr>
+                            <td height="25" colspan="2">雇员信息管理</td>
+                          </tr>
+                          <tr>
+                            <td width="21%" height="29" align="left">服务类型：</td>
+                            <td width="79%" align="left"><select name="service[]" size="8" multiple="multiple" id="service">
+                              <!-- BEGIN SERVICE_LIST -->
+                              <option value="{service_name}" {selected}>{service_name}</option>
+                              <!-- END SERVICE_LIST -->
+                            </select>
+* </td>
+                          </tr>
+                          <tr>
+                            <td height="31" align="left">薪酬要求：</td>
+                            <td align="left"><input type="text" name="salary" value="{salary}" />
+*（最好填面议）</td>
+                          </tr>
+                          <tr>
+                            <td height="31" align="left">文凭要求：</td>
+                            <td align="left"><select name="ideal_degree">
+							  <option value="{ideal_degreeid}">{ideal_degree}</option>
+                              <!-- BEGIN DEGREE_LIST -->
+                              <option value="{degree_id}">{degree_name}</option>
+                              <!-- END DEGREE_LIST -->
+                            </select>
+* </td>
+                          </tr>
+                          <tr>
+                            <td height="31" align="left">性别要求：</td>
+                            <td align="left"><font face="宋体">
+                              <select  name="ideal_sex">
+							    <option value="{ideal_sex}">{ideal_sex}</option>
+                                <option value="不限">不限</option>
+                                <option value="男">男</option>
+                                <option value="女">女</option>
+                              </select>
+* </font></td>
+                          </tr>
+                          <tr>
+                            <td height="24" align="left">年龄要求：</td>
+                            <td align="left"><select name="ideal_age" style="FONT-SIZE: 12px; BACKGROUND-COLOR: #ffffff" size="1">
+							  <option value="{ideal_age}">{ideal_age}</option>
+                              <option value="年龄不限">年龄不限</option>
+                              <option value="20岁以下">20岁以下</option>
+                              <option value="20-30岁">20-30岁</option>
+                              <option value="30-40岁">30-40岁</option>
+                              <option value="40-50岁">40-50岁</option>
+                              <option value="50-60岁">50-60岁</option>
+                              <option value="60岁以上">60岁以上</option>
+                            </select>
+* </td>
+                          </tr>
+                          <tr>
+                            <td height="26" align="left">是否住家：</td>
+                            <td align="left"><select name="home">
+							  <option value="{homeid}">{home}</option>
+                              <option value="0">否</option>
+                              <option value="1">是</option>
+                            </select>
+* </td>
+                          </tr>
+                          <tr>
+                            <td height="28" align="left">工作期限：</td>
+                            <td align="left"><input type="text" name="worktime" value="{worktime}" />
+* 如长期、短期等</td>
+                          </tr>
+                          <tr>
+                            <td height="64" align="left">具体要求和说明：</td>
+                            <td align="left"><textarea name="requirement" cols="40" rows="5">{requirement}</textarea></td>
+                          </tr>
+                          <tr>
+                            <td height="21" colspan="2"><div align="center">
+                              <input type="submit" name="Submit" value="提交" onclick="return editrequirement()" />
+                            </div></td>
+                          </tr>
+                        </table>
+                      </form></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

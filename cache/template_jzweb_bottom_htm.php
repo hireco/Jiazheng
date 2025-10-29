@@ -1,0 +1,20 @@
+<table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="25" bgcolor="#FF99cc"><table width="760" border="0" cellspacing="0" cellpadding="0">
+      <tr class="nav">
+        <td width="42" height="21">&nbsp;</td>
+        <td width="64"><a href="aboutus.php">关于我们</a></td>
+        <td width="69"><a href="servicelist.php">服务信息</a></td>
+        <td width="585">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="72" valign="top"><div id="footer"><?php
+echo $_obj['footer'];
+?>
+</div></td>
+  </tr>
+</table>
+</body>
+</html>

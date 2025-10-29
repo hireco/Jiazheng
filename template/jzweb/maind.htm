@@ -1,0 +1,441 @@
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<SCRIPT language=javaScript>
+<!--
+function mOvr(src,clrOver){ 
+	if (!src.contains(event.fromElement)) { 
+		src.bgColor = clrOver; 
+	}
+}
+function mOut(src,clrIn)  { 
+	if (!src.contains(event.toElement)) { 
+		src.bgColor = clrIn; 
+	}
+} 
+//-->
+</SCRIPT>
+  <div align="center">
+    <table cellspacing="0" cellpadding="0" width="760" border="0">
+        <tr>
+          <td valign="top" align="middle" height="22"><table cellspacing="0" width="100%" border="0">
+            <tbody>
+              <tr>
+                <td style="BACKGROUND: #ff99cc; BORDER-BOTTOM: #666666 2px solid" 
+          width="98" height="20"><p align="center">推荐雇员</p></td>
+                <td style="BACKGROUND: #ffccff; BORDER-BOTTOM: #666666 2px solid"><p align="right"><a href="recommendlist.php">more</a>&nbsp;&nbsp;</p></td>
+              </tr>
+            </tbody>
+          </table>
+              <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td height="2"></td>
+                  </tr>
+                </tbody>
+              </table>
+            <table width="100%" 
+      border="1" align="center" cellpadding="0" cellspacing="1" bordercolor="#FFCCFF" class="border">
+                <tbody>
+                  <tr class="bg_l">
+                    <td align="left" width="24%" height="24"><p align="center"><br />
+                      </p>
+					  <!-- BEGIN REC_LIST -->
+                        <table width="25%" border="0" style="float:left;">
+                          <tbody>
+                            <tr>
+                              <td width="120" height="120" align="center" valign="middle" bordercolor="1"><a href="employeeresume.php?id={id}"><img src="{pic}" name="photo" width="{width}" height="{height}" border="0" id="photo" /></a></td>
+                            </tr>
+                            <tr>
+                              <td><p align="center"><a href="employeeresume.php?id={id}">查看资料</a></p></td>
+                            </tr>
+                          </tbody>
+                      </table>
+						<!-- END REC_LIST -->
+                      </P></td>
+                  </tr>
+                </tbody>
+            </table>
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td height="2"></td>
+                  </tr>
+                </tbody>
+            </table>
+            <table cellspacing="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td style="BACKGROUND: #ff99cc; BORDER-BOTTOM: #666666 2px solid" 
+          width="98" height="20"><p align="center">最新雇员</p></td>
+                    <td style="BACKGROUND: #ffccff; BORDER-BOTTOM: #666666 2px solid"><p align="right">&nbsp;</p></td>
+                    <td style="BACKGROUND: #ffccff; BORDER-BOTTOM: #666666 2px solid" 
+          width="62"><p align="center"><a href="employeelist.php">more</a></p></td>
+                  </tr>
+                </tbody>
+            </table>
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td height="2"></td>
+                  </tr>
+                </tbody>
+            </table>
+            <table class="border" cellspacing="1" cellpadding="0" width="100%" align="center" 
+      border="0">
+                  <tr>
+                    <td><table style="BORDER-COLLAPSE: collapse" bordercolor="#ffffff" 
+            cellpadding="0" width="100%" border="1">
+                        <tbody>
+                          <tr bgcolor="#f7f7f7">
+                            <td align="middle" width="10%" bgcolor="#efefef" height="25">编号</td>
+                            <td align="middle" width="34%" bgcolor="#efefef">服务类型</td>
+                            <td align="middle" width="13%" bgcolor="#efefef">地区</td>
+                            <td align="middle" width="8%" bgcolor="#efefef">性别</td>
+                            <td align="middle" width="21%" bgcolor="#efefef">薪酬要求</td>
+                            <td align="middle" width="14%" bgcolor="#efefef">安排情况</td>
+                          </tr>
+						  <!-- BEGIN EMPLOYEE_LIST -->
+					  <a href="employeeresume.php?id={id}" target="_blank">
+						  <TR onMouseOver="mOvr(this,'#f8ecf9');" onMouseOut="mOut(this,'#F7F7F7');" 
+						  bgColor="#f7f7f7" style="cursor:hand">
+                            <td align="middle" height="25">{id}</td>
+                            <td align="middle">{service}</td>
+                            <td align="middle">{area}</td>
+                            <td align="middle">{sex}</td>
+                            <td align="middle">{salary}</td>
+                            <td align="middle">{occupied}</td>
+                          </tr>
+					  </a>
+						  <!-- END EMPLOYEE_LIST -->
+                    </table></td>
+                  </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td height="2"></td>
+                  </tr>
+                </tbody>
+            </table>
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td height="9"></td>
+                  </tr>
+                </tbody>
+            </table>
+            <table cellspacing="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td style="BACKGROUND: #ff99cc; BORDER-BOTTOM: #666666 2px solid" 
+          width="98" height="20"><p align="center">最新雇主</p></td>
+                    <td style="BACKGROUND: #ffccff; BORDER-BOTTOM: #666666 2px solid"><p align="right">&nbsp;</p></td>
+                    <td style="BACKGROUND: #ffccff; BORDER-BOTTOM: #666666 2px solid" 
+          width="62"><p align="center"><a href="employeelist.php">more</a></p></td>
+                  </tr>
+                </tbody>
+            </table>
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td height="2"></td>
+                  </tr>
+                </tbody>
+            </table>
+            <table class="border" cellspacing="1" cellpadding="0" width="100%" align="center" 
+      border="0">
+                  <tr>
+                    <td><table cellspacing="0" cellpadding="0" width="100%" border="0">
+                        <tbody>
+                          <tr>
+                            <td height="2"></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                        <table style="BORDER-COLLAPSE: collapse" bordercolor="#ffffff" 
+            cellpadding="0" width="100%" border="1">
+                          <tbody>
+                            <tr bgcolor="#f7f7f7">
+                              <td align="middle" width="10%" bgcolor="#efefef" height="25">编号</td>
+                              <td align="middle" width="33%" bgcolor="#efefef">服务类型</td>
+                              <td align="middle" width="12%" bgcolor="#efefef">地区</td>
+                              <td align="middle" width="15%" bgcolor="#efefef">性别要求</td>
+                              <td align="middle" width="15%" bgcolor="#efefef">薪酬要求</td>
+                              <td align="middle" width="15%" bgcolor="#efefef">安排情况</td>
+                            </tr>
+  						   <!-- BEGIN EMPLOYER_LIST -->
+						  <a href="employerresume.php?id={id}" target="_blank">
+							  <TR onMouseOver="mOvr(this,'#f8ecf9');" onMouseOut="mOut(this,'#F7F7F7');" 
+							  bgColor="#f7f7f7" style="cursor:hand">
+                              <td align="middle" height="25">{id}</td>
+                              <td align="middle">{service}</td>
+                              <td align="middle">{area}</td>
+                              <td align="middle">{ideal_sex}</td>
+                              <td align="middle">{salary}</td>
+                              <td align="middle">{occupied}</td>
+                           </tr>
+					      </a>
+  						   <!-- END EMPLOYER_LIST -->
+                        </table></td>
+                  </tr>
+                </tbody>
+            </table></td>
+          <td valign="top" align="middle" width="250" height="22"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td width="2"></td>
+                <td><table width="100%" border="1" 
+            align="center" cellpadding="0" cellspacing="0" bordercolor="#FFCCFF" class="border">
+                  <tbody>
+                    <tr>
+                      <td height="22" align="middle" bgcolor="#FFFFFF" class="bg_l"><table bordercolor="#000000" cellspacing="0" cellpadding="0" 
+                  width="100%" bgcolor="#ff6699" border="0">
+                          <tbody>
+                            <tr>
+                              <td align="middle" width="31%" 
+                        height="20"><font color="#ffffff">联系方式</font></td>
+                              <td width="69%" bgcolor="#FFCCFF"><div align="right">
+                                  <div class="a06" align="right"></div>
+                              </div></td>
+                            </tr>
+                          </tbody>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td height="66" align="left" valign="middle" bgcolor="#FFFFFF" style="line-height:18px;"><p>&nbsp;电话：{telephone}<br>
+          &nbsp;传真：{fax}<br>
+          &nbsp;地址：{address}</p></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+            </tbody>
+          </table>
+              <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td height="2"></td>
+                  </tr>
+                </tbody>
+              </table>
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td width="2"></td>
+                    <td><table class="border" cellspacing="1" cellpadding="0" width="100%" 
+            align="center" border="0">
+                        <tbody>
+                          <tr>
+                            <td class="bg_l" align="middle" height="22"><table bordercolor="#000000" cellspacing="0" cellpadding="0" 
+                  width="100%" bgcolor="#666666" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td align="middle" width="31%" bgcolor="#ff6699" 
+                        height="21"><span class="style16"><font 
+                        color="#ffffff">会员信息</font></span></td>
+                                    <td width="69%" bgcolor="#FFCCFF"><div align="right">
+                                        <div class="a06" align="right"></div>
+                                    </div></td>
+                                  </tr>
+                                </tbody>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" bgcolor="#F5F5F5">
+								<form method="post" action="login.php">
+                                    <table border="0" cellpadding="3" cellspacing="0" class="style1">
+                                      <tr>
+                                        <td align="left" >会员编号</td>
+                                        <td align="left" >{id}</td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" >审批状况</td>
+                                        <td align="left">{checked}</td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" >访问次数</td>
+                                        <td align="left">{visit_times}</td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" >被访问次数</td>
+                                        <td align="left">{visited_times}</td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" >注册日期</td>
+                                        <td align="left">{reg_time}</td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" ><a href="membercenter.php">进入会员中心</a></td>
+                                        <td align="left" ><a href="membercenter.php?j=System&a=logout">退出登陆</a></td>
+                                      </tr>
+                                    </table>
+								  </form>
+							    </td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#F3F3F3"><form id="form1" name="form1" method="post" action="">
+                                </form>                                </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td height="2"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      <table width="100%" border="1" 
+            align="center" cellpadding="0" cellspacing="0" bordercolor="#FFCCFF" class="border">
+                          <tbody>
+                            <tr>
+                              <td class="bg_l" align="middle" height="22"><table bordercolor="#000000" cellspacing="0" cellpadding="0" 
+                  width="100%" bgcolor="#666666" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="middle" width="31%" bgcolor="#ff6699" 
+                        height="20"><font color="#ffffff">最新公告</font></td>
+                                      <td width="69%" bgcolor="#FFCCFF"><div align="right">
+                                          <div class="a06" align="right"><a href="articlelist.php?id=1">more</a></div>
+                                      </div></td>
+                                    </tr>
+                                  </tbody>
+                              </table></td>
+                            </tr>
+                            <tr>
+                              <td height="20"><table cellspacing="1" cellpadding="2" width="100%" border="0">
+                                  <tbody>
+								  <!-- BEGIN NOTICE -->
+                                    <tr>
+                                      <td width="82%" height="17" align="left" bgcolor="#f8ecf9"><a href="article.php?id={id}" title="{title}">{short}</a></td>
+                                    </tr>
+								  <!-- END NOTICE -->
+                                    <tr>
+                                      <td bgcolor="#FFFFFF"></td>
+                                    </tr>
+                                  </tbody>
+                              </table></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td height="43"></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+            </table></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <table cellspacing="0" cellpadding="0" width="760" border="0">
+    <tbody>
+      <tr>
+        <td height="2"></td>
+      </tr>
+    </tbody>
+  </table>
+  <table cellspacing="0" cellpadding="0" width="760" border="0">
+    <tbody>
+      <tr>
+        <td height="2"></td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="760" 
+  border="1" cellspacing="0" bordercolor="#FFCCFF" style="BORDER-COLLAPSE: collapse">
+    <tbody>
+      <tr>
+        <td valign="top" nowrap="nowrap"><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="29%" height="20" nowrap="nowrap" bgcolor="#FF6699"><span class="style16">{sort2}</span></td>
+              <td width="71%" nowrap="nowrap" bgcolor="#FFCCFF"><div align="right"><a href="articlelist.php?id=2">more&gt;&gt;</a></div></td>
+            </tr>
+        </table></td>
+        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="29%" height="20" bgcolor="#FF6699">{sort3}</td>
+              <td bgcolor="#FFCCFF"><div align="right"><a href="newslist.php?id=2">more&gt;&gt;</a></div></td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td valign="top"><table cellspacing="1" cellpadding="3" width="100%" border="0">
+            <tbody>
+              <tr>
+                <td align="left"><ul>
+                    <!-- BEGIN ARTICLE_LIST2 -->
+                    <li align="left"><a href="article.php?id={id}" title="{title}">{short}</a></li>
+                  <!-- END ARTICLE_LIST2 -->
+                </ul></td>
+              </tr>
+            </tbody>
+        </table></td>
+        <td width="375" valign="top"><table cellspacing="1" cellpadding="3" width="100%" border="0">
+            <tbody>
+              <tr>
+                <td align="left"><ul>
+                    <!-- BEGIN ARTICLE_LIST3 -->
+                    <li align="left"><a href="article.php?id={id}" title="{title}">{short}</a></li>
+                  <!-- END ARTICLE_LIST3 -->
+                </ul></td>
+              </tr>
+            </tbody>
+        </table></td>
+      </tr>
+    </tbody>
+  </table>
+  <table id="table3" cellspacing="0" cellpadding="0" width="778" border="0">
+    <tbody>
+      <tr>
+        <td background="" height="1"></td>
+      </tr>
+    </tbody>
+  </table>
+  <table id="table1" cellspacing="0" cellpadding="0" width="760" bgcolor="#ffffff" 
+  border="0">
+    <tbody>
+      <tr bgcolor="#FFFFFF">
+        <td rowspan="3" valign="top" background=""><table width="760" border="0" cellpadding="0" cellspacing="0" id="table2">
+            <tbody>
+              <tr>
+                <td width="92" bgcolor="#FF6699"><div align="center">友情链接</div></td>
+                <td width="269" align="center" bgcolor="#FFCCFF">点击<a href="friend.php">此处</a>申请加入本站友情链接</td>
+                <td width="377" align="center" bgcolor="#FFCCFF">&nbsp;</td>
+              </tr>
+            </tbody>
+        </table>          <table width="760" border="1" cellspacing="0" bordercolor="#FFCCFF">
+            <tr>
+              <td width="762" height="auto" bgcolor="#FFFFFF">
+			  <!-- BEGIN FRIEND_WORD_LIST -->
+			  <div style="width:auto;float:left; margin-left:10px; margin-top:10px;"><a href="{link}" title="{title}" target="_blank">{title}</a></div>
+			  <!-- END FRIEND_WORD_LIST -->
+			  </td>
+            </tr>
+            <tr>
+              <td height="auto" bgcolor="#FFFFFF">
+			  <!-- BEGIN FRIEND_PIC_LIST -->
+			  <div style="width:auto;float:left; margin-left:10px; margin-top:10px;"><a href="{link}" title="{title}" target="_blank"><img src="{pic}" width="90" height="34" border="0"/></a></div>
+			  <!-- END FRIEND_PIC_LIST -->
+			  </td>
+            </tr>
+        </table></td>
+      </tr>
+    </tbody>
+  </table>
+  <table height="6" cellspacing="0" cellpadding="0" width="760" align="center" border="0">
+    <tbody>
+      <tr>
+        <td style="FONT-SIZE: 12px" align="middle" height="5"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

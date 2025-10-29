@@ -1,0 +1,136 @@
+<script language="Javascript" src="js/check.js"/></script>
+<table width="760" height="352" align="center">
+  <tr>
+    <td height="43" background="template/jzweb/images/1.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="301" valign="top"><table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td valign="top" align="middle" bgcolor="#ffffff"><table cellspacing="1" cellpadding="0" width="100%" align="center" 
+                  bgcolor="#FFCCFF" border="0">
+              <tr>
+                <td></td>
+              </tr>
+		<!-- BEGIN NOTE_LIST -->
+              <tr>
+                <td width="114" bgcolor="#f7f7f7" rowspan="2"><center>
+                    <p><br />
+                      <span><img src="{image}" width="38" height="39" id="photo" /></span></p>
+                  <p><span>{name}</span><br />
+                    </p>
+                </center></td>
+                <td width="641" bgcolor="#f7f7f7" height="20"><table cellspacing="0" cellpadding="0" width="92%" border="0" align="left">
+                  
+                      <tr>
+                        <td valign="bottom" width="80%"><div align="left"><font class="cha2">发表于：{time}</font> </div></td>
+    <td width="3%" align="right" valign="top">
+	<!-- IF HASEMAIL -->
+	<a href="mailto:{email}" target="_blank"><img src="template/jzweb/images/LIAN.gif" alt="E-mail" width="16" height="16" border="0" /></a>
+	<!-- ELSE -->
+	<img src="template/jzweb/images/LIAN.gif" alt="E-mail" width="16" height="16" border="0" />
+	<!-- ENDIF -->
+	</td>
+                        <td width="8%" align="right" valign="top">
+						<!-- IF HASQQ -->
+						<a href="http://wpa.qq.com/msgrd?V=0&Uin={qq}&Site={web_title}&Menu=yes" target="_blank"><img src="template/jzweb/images/QQ.gif" alt="QQ" width="16" height="16" border="0" /></a>
+						<!-- ELSE -->
+						<img src="template/jzweb/images/QQ.gif" alt="QQ" width="16" height="16" border="0" />
+						<!-- ENDIF -->
+						</td>
+                        <td width="9%" align="right" valign="top"><img src="template/jzweb/images/IP.gif" alt="{ip}" width="16" height="16" /></td>
+                      </tr>
+                    </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td valign="top" bgcolor="#ffffff">
+				<table width="100%" height="auto">
+                  <tr>
+                    <td valign="top" height="auto" align="left">{content}</td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top" bgcolor="#efefef">回复：<br />
+                      {reply}</td>
+                  </tr>
+                </table></td>
+              </tr>
+		<!-- END NOTE_LIST -->
+			  <tr align="right">
+                <td height="18" colspan="2" valign="bottom" bgcolor="#FFCCFF">{pagechar}</td>
+              </tr>
+            <tr>
+              <td height="2"></TBODY></td>
+            </tr>
+          </table></td>
+        </tr>
+      <tr>
+        <td></TBODY></td>
+        </tr>
+    </table><table width="100%" border="0" align="center" cellpadding="2" cellspacing="1" 
+                  bgcolor="#FFCCFF">
+        <form action="guestbook.php" method="post" name="form1" id="form1">
+          <input type="hidden" name="action" value="post" />
+          
+            <tr>
+              <td bgcolor="#ffffff" colspan="2"><div align="center"><strong>您可以在此留言：</strong></div></td>
+            </tr>
+            <tr>
+              <td width="49%" valign="middle" bgcolor="#ffffff"><table width="76%" align="center">
+                <tr>
+                  <td width="37%"><div align="right">姓名：</div></td>
+                  <td><input type="text" name="name" /></td>
+                </tr>
+                <tr>
+                  <td><div align="right">E-mail：</div></td>
+                  <td><input type="text" name="email" /></td>
+                </tr>
+                <tr>
+                  <td><div align="right">QQ/MSN：</div></td>
+                  <td><input type="text" name="qq" /></td>
+                </tr>
+                <tr>
+                  <td><div align="right">联系电话：</div></td>
+                  <td><input type="text" name="telephone" /></td>
+                </tr>
+				<!-- IF VERIFY -->
+                <tr>
+                  <td><div align="right">请输入验证码：</div></td>
+                  <td><IFRAME frameBorder="0" id="code_check" scrolling="no" name="code_check" src='showpicture.php' style='HEIGHT: 25px; VISIBILITY: inherit; WIDTH: 135px; Z-INDEX: 1'></IFRAME></td>
+                </tr>
+				<!-- ENDIF -->
+              </table></td>
+              <td align="middle" width="51%" bgcolor="#ffffff"><table width="278" border="0" cellpadding="1" cellspacing="0">
+                  
+                    <tr align="middle">
+                      <td colspan="3" height="100"><textarea class="textbox" name="content" rows="6" wrap="virtual" cols="35" type="text"></textarea></td>
+                    </tr>
+                    <tr>
+                      <td width="48">&nbsp;</td>
+                      <td width="39"><img name="face" src="template/jzweb/images/face/1.gif" /></td>
+                      <td width="185">
+					  <select onchange="document.images.face.src=options[selectedIndex].value;" 
+                              size="1" name="image">
+                          <option value="template/jzweb/images/face/1.gif" selected="selected">头像1</option>
+                          <option value="template/jzweb/images/face/2.gif">头像2</option>
+                          <option value="template/jzweb/images/face/3.gif">头像3</option>
+                          <option value="template/jzweb/images/face/4.gif">头像4</option>
+                          <option value="template/jzweb/images/face/5.gif">头像5</option>
+                          <option value="template/jzweb/images/face/6.gif">头像6</option>
+                          <option value="template/jzweb/images/face/7.gif">头像7</option>
+                          <option value="template/jzweb/images/face/8.gif">头像8</option>
+                          <option value="template/jzweb/images/face/9.gif">头像9</option>
+                          <option value="template/jzweb/images/face/10.gif">头像10</option>
+					  </select>
+                          <input id="com_sub" type="submit" value="提 交" name="submit" onclick="return {check}();" />
+                        <input class="bottom" type="reset" value="重填" name="Submit2" /> </td>
+                    </tr>
+                  </tbody>
+              </table></td>
+            </tr>
+        </form><tr><td>&nbsp;</td>
+    </tr></table></td>
+  </tr>
+</table>

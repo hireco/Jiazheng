@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="{keyword}" />
+<meta name="description" content="{description}" />
+<link rel="StyleSheet" href="template/jzweb/styles/style.css" type="text/css"/>
+<title>{TITLE}</title>
+</head>
+
+<body style="font-size:12px;">
+
+<div align="center">
+  <table style="BORDER-RIGHT: 0px solid; BORDER-LEFT: 0px solid" 
+bordercolor="#6c6c6c" cellpadding="0" width="760">
+    <tbody>
+      <tr>
+        <td width="217" align="center" valign="middle">
+		<iframe name="hidden_frame" style="display:none;"></iframe>
+		<a href="{url}" title="{TITLE}"><img src="{logo}" border="0" /></a>
+		</td>
+        <td align="right"><table cellspacing="0" width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td height="25"><p align="right"><span style="CURSOR: hand" onClick="window.external.addFavorite('{url}','{TITLE}')" title="{TITLE}">收藏本站</span>
+    </p></td>
+                </tr>
+              </tbody>
+            </table>
+          <table height="25" cellspacing="0" width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td><p align="right"><a href="register.php">注册</a>&nbsp;&nbsp;&nbsp;<a href="#" onclick="window.open('fastregister.php','newwin', 'height=320, width=480, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no')">快速登记</a></p></td>
+                </tr>
+              </tbody>
+          </table></td>
+      </tr>
+    </tbody>
+  </table>
+  <table cellspacing="0" width="760" bgcolor="#ff99cc" border="0">
+    <tbody>
+      <tr>
+       <td width="20"></td> 
+       <td height="23"><p align="left" class="nav">
+		<!-- BEGIN NAV -->
+		<a href="{link}">{name}</a><span>|
+		<!-- END NAV -->
+		</span>      
+     </td> 
+    </tr>
+    </tbody>
+  </table>
+  <table cellspacing="0" cellpadding="0" width="760" border="0">
+    <tbody>
+      <tr>
+        <td height="2"></td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="760" height="25" border="1" cellpadding="0" bordercolor="#CCCCCC" class="border">
+    <form method="get" action="search.php">
+      <tbody>
+        <tr>
+          <td width="333" height="21" align="right" valign="middle"><select name="type" style="FONT-SIZE: 12px; BACKGROUND-COLOR: #ffffff" >
+            <option value="employee" selected>做家政</option>
+            <option value="employer">请家政</option>
+          </select>              
+            <select name="service" style="FONT-SIZE: 12px; BACKGROUND-COLOR: #ffffff">
+              <option value="不限" selected="selected">分类不限</option>
+			  <!-- BEGIN SERVICE_LIST -->
+			  <option value="{service_name}">{service_name}</option>
+			  <!-- END SERVICE_LIST -->
+            </select>            
+            <select name="area" style="FONT-SIZE: 12px; BACKGROUND-COLOR: #ffffff" size="1">
+              <option value="0" selected="selected">市区不限</option>
+              <!-- BEGIN AREA_LIST -->
+              <option value="{area_id}">{area_name}</option>
+              <!-- END AREA_LIST -->
+            </select>          
+          &nbsp;&nbsp; </td><td width="284" valign="middle" nowrap="nowrap"  style="DISPLAY: block">
+		  <select name="degree" style="FONT-SIZE: 12px; BACKGROUND-COLOR: #ffffff" size="1">
+            <option value="0" selected="selected">文凭不限</option>
+              <!-- BEGIN DEGREE_LIST -->
+              <option value="{degree_id}">{degree_name}</option>
+              <!-- END DEGREE_LIST -->
+          </select>
+&nbsp;
+<select name="age" style="FONT-SIZE: 12px; BACKGROUND-COLOR: #ffffff" size="1">
+  <option value="0" selected="selected">年龄不限</option>
+  <option value="1">20岁以下</option>
+  <option value="2">20-30岁</option>
+  <option value="3">30-40岁</option>
+  <option value="4">40-50岁</option>
+  <option value="5">50-60岁</option>
+  <option value="6">60岁以上</option>
+</select>
+&nbsp; <font color="#ffffff"><b>
+<select name="sex" style="FONT-SIZE: 12px; BACKGROUND-COLOR: #ffffff" size="1">
+  <option  value="不限" selected="selected">性别不限</option>
+  <option value="男">男</option>
+  <option value="女">女</option>
+</select>
+</b></font></td>
+          <td width="190" nowrap="nowrap" style="DISPLAY: block"><div align="center">
+            <input type="submit" value="搜索" />
+          </div></td>
+        </tr>
+      </tbody>
+    </form>
+  </table>
+  <table cellspacing="0" cellpadding="0" width="760" border="0">
+    <tbody>
+      <tr>
+        <td height="5"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

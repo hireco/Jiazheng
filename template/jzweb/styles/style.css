@@ -1,0 +1,82 @@
+a{ color:#333333; text-decoration:none;}
+a:visited {
+	color:#FF9933;
+	text-decoration:none;
+	font-size: 12px;
+}
+a:hover {
+	color:#FF0000;
+	text-decoration:none;
+	font-size: 12px;
+}
+a span {
+	color:#FF9933;
+	text-decoration:none;
+	font-size: 12px;
+}
+a:active {
+	color: #FF0000;
+	text-decoration:none;
+	font-size: 12px;
+}
+body {
+	font-size:12px;
+}
+.nav {
+	color:black;
+}
+.nav a:visited {
+	color:black;
+	text-decoration:none;
+	font-size: 12px;
+}
+.nav a:hover {
+	color:black;
+	text-decoration:none;
+	font-size: 12px;
+}
+
+.nav a:active {
+	color: black;
+	text-decoration:none;
+	font-size: 12px;
+}
+.reserve a:visited {
+	color:black;
+	text-decoration:none;
+	font-size: 12px;
+}
+.reserve a:hover {
+	color:black;
+	text-decoration:none;
+	font-size: 12px;
+}
+.reserve a:active {
+	color: black;
+	text-decoration:none;
+	font-size: 12px;
+}
+#footer {
+	margin-top:10px;
+	clear:both;
+}
+
+#leftad {
+	width:100px;
+	float:left;
+}
+
+#mainContent {
+	width:880px;
+	float:right;
+}
+
+#Content {
+	width:760px;
+	float:left;
+}
+
+#rightad {
+	width:100px;
+	float:right;
+}
